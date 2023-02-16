@@ -1,0 +1,681 @@
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+}
+
+/* Variables */
+html
+{
+    --principale: #0065FC;
+    --secondaire: #DEEBFF;
+    --fond: #F2F2F2;
+}
+
+/* ******* */
+
+body 
+{
+    margin: 0 auto;
+    max-width: 1400px;
+    font-family: Raleway;
+    padding: 0px 10px 0px 10px;
+}
+
+a, button, h1, h2, h3, p, h4, input
+{
+    font-family: Raleway;
+    text-decoration: none;
+    color: black;
+}
+
+button 
+{
+    font-weight: bold;
+}
+
+/* *** HEADER *** */
+header 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img 
+{
+    width: 50px;
+    margin-top: 30px;
+    height: 17px;
+}
+
+header nav 
+{
+    display: flex;
+    gap: 55px;
+}
+
+header nav a 
+{
+    font-size: 0.8em;
+    padding-top: 30px;
+}
+
+header nav a:hover
+{
+    color: var(--principale);
+    border-top: 3px solid var(--principale);
+}
+
+/* *** Section researchAndFilters *** */
+.researchAndFilters
+{
+    margin-top: 50px;
+}
+
+.researchAndFilters h1 
+{
+    font-size: 1.35em;
+}
+
+.researchAndFilters p 
+{
+    font-size: 0.8em;
+}
+
+.researchAndFilters .p1
+{
+    margin-top: -12px;
+}
+
+.researchAndFilters form 
+{
+    display: flex;
+    margin-top: 15px;
+}
+
+.researchAndFilters form .location
+{
+    font-size: 0.8em;
+    background-color: #F2F2F2;
+    border-top-left-radius: 11px;
+    border-bottom-left-radius: 11px;
+    padding: 12px;
+}
+
+.researchAndFilters form .glass 
+{
+    display: none;
+}
+
+.researchAndFilters form input 
+{
+    font-weight: 700;
+    border: 1px solid #F2F2F2;
+    padding-left: 10px;
+}
+
+.researchAndFilters form button 
+{
+    border-top-right-radius: 11px;
+    border-bottom-right-radius: 11px;
+    border: none;
+    background-color: #0065FC;
+    color: white;
+    padding: 0px 12px 0px 12px;
+    font-weight: 600;
+}
+
+.researchAndFilters .filters 
+{
+    display: flex;
+    gap: 35px;
+    margin-top: 27px;
+}
+
+.researchAndFilters .filters .buttons
+{
+    display: flex;
+    gap: 35px;
+}
+
+.researchAndFilters .filters h3
+{
+    font-size: 0.9em;
+    font-weight: 800;
+    font-family: Raleway;
+}
+
+.researchAndFilters .filters button 
+{
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    background-color: transparent;
+    border: 1px solid #D9D9D9;
+    padding: 0px 20px;
+    border-radius: 50px;
+}
+
+.researchAndFilters .filters button i 
+{
+    font-size: 1.3em;
+    color: #0065FC;
+}
+
+.researchAndFilters .filters button:hover 
+{
+    background-color: #DEEBFF;
+}
+
+.researchAndFilters .information 
+{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-top: 23px;
+}
+
+.researchAndFilters .information i 
+{
+    color: #0065FC;
+    border: 1px solid #D9D9D9;
+    border-radius: 50%;
+    padding: 4px 8px;
+    font-size: 0.7em;
+}
+
+/* *** Div hebergementsAndPopulars *** */
+.hebergementsAndPopulars 
+{
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    gap: 35px;
+}
+
+.hebergementsAndPopulars h2
+{
+    font-size: 1.2em;
+    font-weight: 800;
+}
+
+.hebergements, .populars
+{
+    background-color: var(--fond);
+    padding: 20px 40px;
+    border-radius: 15px;
+}
+
+.hebergements 
+{
+    width: 70%;
+}
+
+.populars 
+{
+    width: 450px;
+}
+
+.hebergements .offers 
+{
+    margin-top: 25px;
+    border-radius: 15px;
+    width: 100%;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 29% 29% 29%;
+    gap: 30px;
+}
+
+.hebergements .offers .offer
+{
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+.hebergements .offers .offer img
+{
+    width: 100%;
+    border: 4px solid #fff;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.hebergements .offers .offer .about
+{
+    margin-top: -15px;
+    padding-bottom: 10px;
+    padding-left: 12px;
+}
+
+.hebergements .offers .offer .about h4
+{
+    font-weight: 800;
+}
+
+.hebergements .offers .offer .about p
+{
+    margin-top: -15px;
+    font-size: 0.8em;
+}
+
+.hebergements .offers .offer .about .vote
+{
+    margin-top: -5px;
+    display: flex;
+}
+
+.hebergements .offers .offer .about .vote i
+{
+    color: var(--fond);
+    font-size: 0.7em;
+}
+
+.hebergements .offers .offer .about .vote i:not(:last-child)
+{
+    color: var(--principale);
+}
+
+.hebergements .displayMost
+{
+    cursor: pointer;
+    margin-top: 40px;
+    font-size: 0.95em;
+    font-weight: bold;
+}
+
+.populars 
+{
+    flex-direction: column;
+}
+
+.populars .title 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.populars .title i
+{
+    color: var(--principale);
+}
+
+.populars .offers 
+{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 35px;
+}
+
+.populars .offers .offer
+{
+    display: flex;
+    padding-right: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    background-color: white;
+    border-radius: 15px;
+    height: 150px;
+}
+
+.populars .offers .offer img
+{
+    border: 4px solid white;
+    width: 50%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.populars .offers .offer .about
+{
+    position: relative;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.populars .offers .offer .about h4
+{
+    font-weight: 800;
+}
+
+.populars .offers .offer .about p
+{
+    margin-top: -15px;
+    font-size: 0.8em;
+}
+
+.populars .offers .offer .about .vote
+{
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+}
+
+.populars .offers .offer .about .vote i
+{
+    color: var(--fond);
+    font-size: 0.7em;
+}
+
+.populars .offers .offer .about .vote i:not(:last-child)
+{
+    color: var(--principale);
+}
+
+/* *** Section activities *** */
+#activities 
+{
+    margin-top: 70px;
+}
+
+#activities h2 
+{
+    font-weight: 800;
+}
+
+#activities .offers
+{
+    margin-top: 30px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 23% 23% 23% 23%;
+    justify-content: space-between;
+}
+
+#activities .offers .offer
+{
+    background-color: white;
+    border-radius: 15px;
+    padding-bottom: 0.1px;
+    height: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+#activities .offers .offer h4
+{
+    font-size: 0.9em;
+}
+
+#activities .offers .offer img
+{
+    width: 100%;
+    height: 90%;
+    border-top-right-radius: 15px;
+    object-fit: cover;
+    object-position: center;
+    border-top-left-radius: 15px;
+}
+
+#activities .offers .offer h4
+{
+    padding-left: 15px;
+    margin-top: 10px;
+}
+
+/* *** Footer *** */
+footer 
+{
+    padding: 20px 150px 20px 0px;
+    margin-top: 50px;
+    justify-content: space-around;
+    display: flex;
+    background-color: var(--fond);
+}
+
+footer div
+{
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+footer div a
+{
+    font-size: 0.9em;
+}
+
+@media screen and (max-width: 992px)
+{
+    body 
+    {
+        padding: 0px 30px 0px 30px;
+    }
+    
+    .hebergementsAndPopulars
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hebergements 
+    {
+        width: 100%;
+    }
+
+    .populars 
+    {
+        width: 100%;
+    }
+
+    .populars .offers 
+    {
+        width: 100%;
+        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 31% 31% 31%;
+        
+        gap: 30px;
+    }
+
+    .populars .offers .offer 
+    {
+        height: 150px;
+    }
+
+    .populars .offers .offer .about h4
+    {
+        font-size: 0.8em;
+    }
+
+    .populars .offers .offer .about p
+    {
+        font-size: 0.65em;
+        padding-bottom: 50px;
+    }
+
+    .populars .offers .offer img
+    {
+        width: 60%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    #activities .offers .offer
+    {
+        background-color: white;
+        border-radius: 15px;
+        padding-bottom: 2px;
+        height: 100%;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    }
+
+    #activities .offers .offer h4
+    {
+        font-size: 0.9em;
+    }
+
+    #activities .offers .offer img
+    {
+        width: 100%;
+        height: 83%;
+        border-top-right-radius: 15px;
+        object-fit: cover;
+        object-position: center;
+        border-top-left-radius: 15px;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    body 
+    {
+        padding: 0px;
+    }
+    
+    header 
+    {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    header nav 
+    {
+        width: 100%;
+        gap: 0;
+    }
+
+    header a 
+    {
+        width: 50%;
+        padding-bottom: 10px;
+        text-align: center;
+        border-bottom: 3px solid var(--fond);
+    }
+
+    header nav a:hover
+    {
+        border-top: none;
+        border-bottom: 3px solid var(--principale);
+    }
+
+    header img 
+    {
+        width: 55px;
+        height: 19px;
+    }
+
+    .researchAndFilters
+    {
+        padding-left: 20px;
+    }
+
+    .researchAndFilters form .rechercher 
+    {
+        display: none;
+    }
+
+    .researchAndFilters form .glass 
+    {
+        display: block;
+    }
+
+    .researchAndFilters .filters
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .researchAndFilters .filters .buttons
+    {
+        margin-top: -30px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .researchAndFilters .filters .buttons button
+    {
+        padding: 9px 13px;
+    }
+
+    .hebergementsAndPopulars
+    {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .populars .offers
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .populars .offers .offer img
+    {
+        width: 60%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .populars .offers .offer .about h4
+    {
+        font-size: 0.9em;
+    }
+
+    .populars .offers .offer .about p
+    {
+        font-size: 0.85em;
+    }
+
+    .populars .offers .offer .about .vote
+    {
+        font-size: 1.3em;
+    }
+
+    .hebergements .offers 
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hebergements .offers .offer img
+    {
+        object-fit: cover;
+        object-position: center;
+    }
+
+    #activities 
+    {
+        padding: 0px 30px 0px 30px;
+    }
+
+    #activities .offers
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    #activities .offers .offer img
+    {
+        width: 100%;
+        height: 76%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    #activities .offers .offer 
+    {
+        height: 190px;
+    }
+
+    footer 
+    {
+        display: flex;
+        flex-direction: column;
+        padding-left: 30px;
+    }
+}
